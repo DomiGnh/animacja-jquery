@@ -1,6 +1,8 @@
 'use strict';
 
 /*SLIDER */
+
+
 $(function(){
    
     /*zmienne*/
@@ -27,17 +29,16 @@ $(function(){
     
 
     
+    
+    
     /*szerokość kontenera*/
     slideShow.css('width', slideCount * 100 + '%');
     console.log(slideCount);
     
-    
-    /*szerokość single-slide 1 sposób*/
-//    slideWidth.each(function(){
-//    slideWidth.css('width', 100 / slideCount + '%');});
+
     
     
-/*szerokość i położenie pojdynczego slidu - marginesy*/
+    /*szerokość i położenie pojdynczego slidu - marginesy*/
     
     $('.single-slide').each(function(index){
        $(this).css({'width': slideWidth + '%', 'margin-left': index * slideWidth + '%'});
@@ -92,7 +93,8 @@ $(function(){
     
     
     
-    /* funkcja zdefiniowana na górze*/
+    /* kliknięcia w strzałki, za pomocą funkcji-
+    funkcja zdefiniowana na górze*/
     
     $('.prev-slide').click(function(){
         slide(slideIndex -1);
